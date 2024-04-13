@@ -1,0 +1,21 @@
+<testsuite name="order.Order a Product" tests="1" errors="0" failures="0" skipped="0" time="2.791049" timestamp="2024-04-13T15:54:33.125752" hostname="DESKTOP-98VP8H0"><testcase classname="order.Order a Product" name="Order a product and complete checkout" status="passed" time="2.791049"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Order a product and complete checkout
+    Given I am on the inventory page ... passed in 0.993s
+    When user sorts products from low price to high price ... passed in 0.323s
+    And user adds lowest priced product ... passed in 0.126s
+    And user clicks on cart ... passed in 0.146s
+    And user clicks on checkout ... passed in 0.142s
+    And user enters first name John ... passed in 0.216s
+    And user enters last name Doe ... passed in 0.161s
+    And user enters zip code 123 ... passed in 0.183s
+    And user clicks Continue button ... passed in 0.150s
+    Then I verify in Checkout overview page if the total amount for the added item is $8.63 ... passed in 0.069s
+    When user clicks Finish button ... passed in 0.186s
+    Then Thank You header is shown in Checkout Complete page ... passed in 0.096s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
